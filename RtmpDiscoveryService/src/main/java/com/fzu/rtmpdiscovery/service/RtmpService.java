@@ -136,7 +136,7 @@ public class RtmpService {
                     HashMap video = (HashMap) meta.get("video");
                     String height = ((Integer) video.get("height")).toString();
                     String width = ((Integer) video.get("width")).toString();
-                    resList.add(new HlsLive(appName,liveName,height,width,getLiveUrl(ip,appName,liveName),ip));
+                    resList.add(new HlsLive(appName,liveName,getLiveUrl(ip,appName,liveName),height,width,ip));
                 }
             }
         }catch (NullPointerException e){
