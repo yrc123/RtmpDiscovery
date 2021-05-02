@@ -49,7 +49,7 @@ public class RtmpService {
      * @return hls流url
      */
     private String getLiveUrl(String ip,String appName,String liveName){
-        return "http://"+ip+"/"+appName+"/"+liveName+".m3u8";
+        return "http://"+ip+"/live/"+liveName+".m3u8";
     }
     /**
      * 将单个服务器的所有流信息的xml转换成JSONObject
